@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:auto_doctor/view/user/WidgetAssitance/mapPage.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import '../../../../sharedWidgets/attention/customToast.dart';
@@ -27,7 +28,7 @@ class Report {
       showSuccessToast('Success');
       Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
         builder: (context) {
-          return HomeScreen();
+          return MapPage();
         },
       ), (route) => false);
     } else {
